@@ -11,8 +11,14 @@ PLAYER:GetData(strKey, funcCallback(strData))
 Example:
 ```lua
 hook.Add("PlayerInitialSpawn", "MySQLPDataTest", function(pPlayer) 
-  pPlayer:SetData("money", 1500) 
+    pPlayer:SetData("money", 1500) 
 end) 
+
+hook.Add("PlayerSay", "MySQLPDataTest", function(pPlayer, strText, bTeam) 
+    pPlayer:GetData("money", function(strData) 
+        pPlayer:ChatPrint("You currently have $"..strData.." in your wallet!") 
+    end)
+end)
 ```
 
 ### Credits

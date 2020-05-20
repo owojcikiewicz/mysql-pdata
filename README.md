@@ -22,7 +22,6 @@ end)
 ```
 
 ### Credits
-- SaturdaysHeroes (Code) 
 - [fesh](https://steamcommunity.com/profiles/76561198139510546) (Help) 
 - [GlorifiedPig](https://steamcommunity.com/id/GlorifiedPig/) (Idea & Help) 
 - [FredyH](https://github.com/FredyH/MySQLOO) (MySQLOO) 
